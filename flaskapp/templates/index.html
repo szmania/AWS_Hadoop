@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<title>MapRed Application</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="static/stylesheets/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<div class="header">
+				<h3 class="text-muted"><center>Welcome {{username}}</center></h3>
+			</div>
+			
+			<div>
+				<form action="logout" method="post">
+					<center>
+						<input type="submit" value="logout">
+					</center>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div>			
+				<form action="input" method="post" enctype="multipart/form-data">
+					<center>
+						<input type="text" name="uip1">
+						<br><br>
+						<input type="text" name="uip2">
+						<br><br>
+						<input type="text" name="uip3">
+						<br><br>
+						<input type="submit" value="Run">
+					</center>
+				</form>
+			</div>
+			
+		</div>
+	</body>
+</html>
